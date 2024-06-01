@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة مقسومة إلى نصفين</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 24px;
+        }
+        .content {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex: 1;
+        }
+        .split {
+            height: 100%;
+            width: 50%;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .left {
+            background-color: #f1f1f1;
+        }
+        .right {
+            background-color: #ffffff;
+        }
+        .iframe-container {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        تحت اشراف المهندس احمد العزب
+    </div>
+    <div class="content">
+        <div class="split left">
+            <iframe class="iframe-container" src="https://www.chatpdf.com/" frameborder="0"></iframe>
+        </div>
+        <div class="split right">
+            <iframe class="iframe-container" src="https://www.imagetotext.cc/ar" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
